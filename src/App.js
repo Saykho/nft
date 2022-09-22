@@ -4,11 +4,11 @@ import { Menu } from "./components/Menu/Menu";
 import { Footer } from "./components/Footer/Footer";
 import { MainPage } from "./components/MainPage/MainPage";
 import { UploadPage } from "./components/UploadPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Menu/>
 
             <Routes>
@@ -17,7 +17,7 @@ function App() {
             </Routes>
 
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
