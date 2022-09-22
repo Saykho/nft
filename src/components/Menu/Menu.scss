@@ -1,0 +1,118 @@
+@import "src/style/colors";
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 160px;
+
+  &__left-content {
+    display: flex;
+    align-items: center;
+
+    .img-logo {
+      width: 126px;
+      height: 32px;
+      margin-right: 32px;
+    }
+
+    .divider {
+      width: 2px;
+      height: 40px;
+      background: $grey-3;
+      border-radius: 2px;
+      margin-right: 32px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      color: $grey-1;
+      text-align: center;
+    }
+
+    .links li {
+      margin-right: 32px;
+      cursor: pointer;
+    }
+
+    .links li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__right-content {
+    display: flex;
+    align-items: center;
+
+    .search {
+      position: relative;
+      margin-right: 24px;
+
+      .search-field {
+        width: 256px;
+        height: 40px;
+        border: 2px solid $grey-3;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-family: 'Poppins', sans-serif !important;
+      }
+
+      .search-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-40%);
+
+        .search-img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .notification {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin-right: 24px;
+    }
+
+    .button-upload {
+      //width: 80px;
+      //height: 40px;
+      text-align: center;
+      background: $primaryBlue;
+      border-radius: 90px;
+      border: $primaryBlue;
+      color: #FCFCFD;
+      padding: 12px 16px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    .account {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //width: 147px;
+      height: 40px;
+      border: 2px solid $grey-3;
+      border-radius: 90px;
+      padding: 4px 12px 4px 4px;
+      text-align: center;
+
+      .img-avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

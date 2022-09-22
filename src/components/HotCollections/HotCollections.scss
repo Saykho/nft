@@ -1,0 +1,21 @@
+@import "src/style/colors";
+
+.hot-collections {
+  padding: 128px 160px;
+  background: $white-1;
+  margin: 0 auto;
+
+  &__title {
+    color: $black-2;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+}
+
+

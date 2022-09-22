@@ -1,0 +1,113 @@
+@import "src/style/colors";
+
+.top-creators-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background: $white-2;
+  padding: 24px 24px;
+  transition: all 0.5s ease;
+
+  .top-creator-top {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+
+    .top-rate {
+      display: flex;
+      align-items: center;
+      //background: $primaryBlue;
+      border-radius: 24px;
+      padding: 4px 8px;
+      color: $white-2;
+      margin-right: 44px;
+
+      .img-cup {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+    }
+
+    .top-rate_violet {
+      background: #9757D7;
+    }
+
+    .top-rate_blue {
+      background: #3772FF;
+    }
+
+    .top-rate_green {
+      background: #45B36B;
+    }
+
+    .top-rate_black {
+      background: #23262F;
+    }
+
+    .top-rate_grey {
+      background: #777E91;
+    }
+
+    .add {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .open {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .top-divider {
+    height: 1px;
+    background: $grey-3;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .top-creator-avatar {
+    position: relative;
+    margin-bottom: 16px;
+
+    .img-top {
+      width: 64px;
+      height: 64px;
+    }
+
+    .icon-img {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+    }
+  }
+
+  .top-creator-name {
+    color: $black-2;
+  }
+
+  .user-coins {
+    display: flex;
+    align-items: center;
+
+    .value {
+      color: $black-3;
+    }
+
+    .eth {
+      color: $grey-1;
+    }
+  }
+}
+
+.top-creators-info:hover {
+  box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
+  transform: scale(1.1) translateY(16px);
+}

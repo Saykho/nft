@@ -1,0 +1,65 @@
+@import "src/style/colors";
+
+.item-list {
+  display: flex;
+  align-items: center;
+
+  .img-item-list {
+    border-radius: 12px;
+    width: 160px;
+    height: 148px;
+    margin-right: 24px;
+  }
+
+  .item-list-content {
+
+    .item-list-name {
+      color: $black-2;
+      margin-bottom: 8px;
+    }
+
+    .item-list-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .creator-img {
+        width: 24px;
+        height: 24px;
+        margin-right: 11px;
+      }
+
+      .button-coins {
+        border-radius: 4px;
+        border: 2px solid $primaryGreen;
+        color: $primaryGreen;
+        background: none;
+        padding: 8px 8px 6px;
+        text-align: center;
+        margin-right: 11px;
+      }
+
+      .item-availability {
+        color: $grey-1;
+      }
+    }
+
+    .button-white {
+      border: 2px solid $grey-3;
+      border-radius: 90px;
+      padding: 8px 12px;
+      background: none;
+      color: $black-2;
+      cursor: pointer;
+    }
+
+    .button-blue {
+      border: 2px solid $primaryBlue;
+      border-radius: 90px;
+      background: $primaryBlue;
+      color: $white-2;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  }
+}

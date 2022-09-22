@@ -1,0 +1,105 @@
+@import "src/style/colors";
+
+.hot-bid-list {
+
+  .img-hot-bid {
+    width: 256px;
+    height: 303px;
+    border-radius: 16px;
+    margin-bottom: 21px;
+  }
+
+  .hot-bid-title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .hot-bid-title {
+      color: $black-2;
+    }
+
+    .hot-bid-price {
+      color: $primaryGreen;
+      border-radius: 4px;
+      border: 2px solid $primaryGreen;
+      padding: 8px 8px 6px;
+    }
+  }
+
+  .owner-creator-collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+
+    .owner-creator {
+
+      .img-av {
+        width: 24px;
+        height: 24px;
+      }
+
+      .avatar-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .avatar-2 {
+        position: absolute;
+        left: 16px;
+        top: 0;
+      }
+
+      .avatar-3 {
+        position: absolute;
+        left: 32px;
+        top: 0;
+      }
+    }
+
+    .hot-bid-presence {
+      color: $black-3;
+    }
+  }
+
+  .hot-bid-divider {
+    height: 1px;
+    border-radius: 1px;
+    background: $grey-3;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .bid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .bid-left {
+      display: flex;
+      align-items: center;
+
+      .img-line {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+
+      .highest-bid {
+        color: $grey-1;
+        margin-right: 4px;
+      }
+
+      .bid-value {
+        color: $black-3;
+      }
+    }
+
+    .update {
+      color: $grey-1;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "src/style/colors";
+
+.hot-bid {
+  padding: 136px 160px 128px;
+  margin: 0 auto;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+    .hot-bid-title {
+      color: $black-2;
+    }
+
+    .hot-bid-carousel {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

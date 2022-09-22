@@ -1,0 +1,53 @@
+@import "src/style/colors";
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 24px 56px 25px 0;
+
+  .user-avatar {
+    position: relative;
+
+    .img-user {
+      width: 56px;
+      height: 56px;
+      margin-right: 16px;
+    }
+
+    .rating {
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      border-radius: 64px;
+      border: 2px solid $white-2;
+      background: $black-2;
+      color: $white-2;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .user-name {
+      color: $black-2;
+    }
+
+    .user-coins {
+      display: flex;
+      align-items: center;
+
+      .value {
+        color: $black-3;
+      }
+
+      .eth {
+        color: $grey-1;
+      }
+    }
+  }
+}

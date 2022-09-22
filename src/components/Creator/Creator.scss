@@ -1,0 +1,148 @@
+@import "src/style/colors";
+
+.auction__creator {
+  display: flex;
+  flex-direction: column;
+
+  .creator-title {
+    color: $black-2;
+    margin-bottom: 20px;
+  }
+
+  .creator-data {
+    display: flex;
+    margin-bottom: 40px;
+
+    .creator-name {
+      display: flex;
+      align-items: center;
+      margin-right: 66px;
+
+      .img-creator {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .creator-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .creator-role {
+          color: $grey-1;
+        }
+
+        .creator-name {
+          color: $black-2;
+        }
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+
+      .img-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .price-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .price-instant {
+          color: $grey-1;
+        }
+
+        .coins {
+          color: $black-2;
+        }
+      }
+    }
+  }
+
+  .creator-current-bid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 61px;
+    border: 2px solid $grey-3;
+    border-radius: 24px;
+    background: $white-2;
+    margin-bottom: 40px;
+    box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
+
+    .current-bid-title {
+      color: $black-2;
+    }
+
+    .current-bid-amount {
+      color: $black-1;
+    }
+
+    .current-bid-price {
+      color: $grey-1;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .current-bid-ending {
+      color: $black-2;
+      margin-bottom: 8px;
+    }
+
+    .date {
+      display: flex;
+      justify-content: space-between;
+
+      .date-value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 25px;
+        margin-left: 25px;
+
+        .number {
+          color: $black-1;
+          text-align: center;
+        }
+
+        .unit {
+          color: $grey-1;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .creator-bid {
+    border-radius: 90px;
+    border: $primaryBlue;
+    background: $primaryBlue;
+    padding: 16px 0;
+    color: $white-1;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .creator-view {
+    border-radius: 90px;
+    border: 2px solid $grey-3;
+    background: none;
+    padding: 16px 0;
+    text-align: center;
+    color: $black-2;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+
+  .creator-carousel {
+    display: flex;
+  }
+}

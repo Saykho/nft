@@ -1,0 +1,59 @@
+@import "src/style/colors";
+
+.top-creators {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $white-1;
+  padding: 128px 160px;
+  margin: 0 auto;
+
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+
+    .filter-title {
+
+      .top-creators-title {
+        color: $grey-1;
+      }
+
+      .filter-category {
+        display: flex;
+        align-items: center;
+        color: $black-2;
+
+        .img-down {
+          width: 10px;
+          height: 15px;
+          margin-left: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .top-creators-left {
+      position: absolute;
+      left: -72px;
+      top: 50%;
+      transform: translateY(-20px);
+    }
+
+    .top-creators-right {
+      position: absolute;
+      right: -72px;
+      top: 50%;
+      transform: translateY(-20px);
+    }
+  }
+
+}

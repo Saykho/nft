@@ -1,0 +1,23 @@
+@import "src/style/colors";
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  padding: 6px 12px;
+  margin-right: 12px;
+  color: $grey-1;
+  cursor: pointer;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation li:hover {
+  background: $black-3;
+  color: $white-2;
+  border-radius: 100px;
+}

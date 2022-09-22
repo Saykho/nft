@@ -1,0 +1,57 @@
+@import "src/style/colors";
+
+.feed__feature-item {
+  margin-right: 32px;
+
+  .img-feature-item {
+    width: 448px;
+    height: 432px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: 1px solid #CDB4DB;;
+  }
+
+  .feature-item-info {
+    display: flex;
+    align-items: center;
+
+    .img-avatar-creator {
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 95px;
+
+      .item-name {
+        color: $black-2;
+      }
+
+      .item-stock {
+        color: $black-3;
+      }
+    }
+
+    .feature-item-price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .item-bid {
+        color: $grey-1;
+      }
+
+      .button-price {
+        border-radius: 4px;
+        border: 2px solid $primaryGreen;
+        padding: 8px 8px 6px;
+        background: none;
+        color: $primaryGreen;
+      }
+    }
+  }
+}

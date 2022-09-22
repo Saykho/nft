@@ -1,0 +1,58 @@
+@import "src/style/colors";
+
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 160px;
+  border-top: 1px solid $grey-3;
+  margin: 0 auto;
+
+  &__content {
+
+    .cta-slogan {
+      color: $grey-1;
+      margin-bottom: 12px;
+    }
+
+    .cta-title {
+      color: $black-2;
+      margin-bottom: 20px;
+    }
+
+    .cta-description {
+      color: $grey-1;
+      margin-bottom: 40px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+
+      .button-now {
+        background: $primaryBlue;
+        border-radius: 90px;
+        border: 2px solid $primaryBlue;
+        padding: 16px 24px;
+        color: $white-2;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+
+      .button-more {
+        border-radius: 90px;
+        border: 2px solid $grey-3;
+        background: none;
+        color: $black-2;
+        padding: 16px 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__img {
+    width: 640px;
+    height: 640px;
+  }
+}

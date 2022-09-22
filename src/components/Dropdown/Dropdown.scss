@@ -1,0 +1,44 @@
+@import "src/style/colors";
+
+.dropdown {
+  display: flex;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid $grey-3;
+    border-radius: 12px;
+    background: $white-2;
+    padding: 8px 8px 8px 16px;
+    color: $black-2;
+
+
+    .dropdown-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      border: 2px solid $grey-3;
+      padding: 4px;
+      text-align: center;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+
+      .img-open {
+        //width: 6px;
+        //height: 9px;
+      }
+    }
+  }
+
+  &__button_short {
+    width: 180px;
+  }
+
+  &__button_long {
+    width: 256px;
+  }
+
+}

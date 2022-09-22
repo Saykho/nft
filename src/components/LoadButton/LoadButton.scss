@@ -1,0 +1,18 @@
+@import "src/style/colors";
+
+.load-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 90px;
+  border: 2px solid $grey-3;
+  background: none;
+  color: $black-2;
+  width: 132px;
+  padding: 12px 16px;
+
+  .load {
+    width: 16px;
+    height: 16px;
+  }
+}
